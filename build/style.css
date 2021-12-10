@@ -1,0 +1,169 @@
+body {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 14px;
+
+    margin: 0;
+    padding: 0;
+    background-image: url("background.png");
+    background-repeat: repeat;
+    animation: scrolling 120s linear infinite;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    background-color: #ffffff;
+    margin-top: 5em;
+    border: 5px solid #000000;
+    text-align: center;
+    max-width: 800px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 5rem;
+}
+
+p {
+    line-height: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+p.tagline {
+    margin-top: -2rem; /* lol */
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    margin: 3rem;
+}
+
+h2 {
+    font-weight: normal;
+    margin: 2rem;
+}
+
+button {
+    background-color: #b5eaea;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    color: #000000;
+    padding: 1rem;
+    border: 5px solid #000000;
+    margin: 1rem;
+    width: 400px;
+}
+
+button:hover {
+    background-color: #b5eaea;
+    cursor: pointer;
+    animation: changeBackgroundColor .5s linear infinite;
+}
+
+button:disabled {
+    background-color: #9f9f9f;
+    color: #ffffff;
+}
+
+button:disabled:hover {
+    background-color: #9f9f9f;
+    color: #ffffff;
+    cursor: not-allowed;
+    animation: none;
+}
+
+hr {
+    border: 2px dashed #000000;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+a {
+    color: #f38ba0;
+}
+
+a:hover {
+    color: #8bf396;
+    animation: changeColor 1s infinite;
+    cursor: pointer;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.case {
+    width: 300px;
+}
+
+.arbibot {
+    margin: .25rem;
+}
+
+.arbibot p {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+ul {
+    text-align: left;
+    line-height: 1.25rem;
+}
+
+thead {
+    background-color: #dbdbdb;
+    text-decoration: underline;
+}
+
+tbody {
+    background-color: #eeeeee;
+}
+
+th, td {
+    padding: .5rem;
+}
+
+@keyframes scrolling {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 3600px 3600px;
+    }
+}
+
+@keyframes changeBackgroundColor {
+    0% {
+        background-color: #8bf396;
+    }
+    15% {
+      background-color: #b5eaea;
+    }
+    85% {
+        background-color: #eab5d9;
+    }
+    100% {
+        background-color: #8bf396;
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        color: #8bf396;
+    }
+    35% {
+      color: #eab5d9;
+    }
+    70% {
+        color: #b5eaea;
+    }
+    100% {
+        color: #8bf396;
+    }
+}
