@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/static/js/main.a5401671.chunk.js",
-    "main.js.map": "/static/js/main.a5401671.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c740c87d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c740c87d.js.map",
-    "static/js/2.11856e59.chunk.js": "/static/js/2.11856e59.chunk.js",
-    "static/js/2.11856e59.chunk.js.map": "/static/js/2.11856e59.chunk.js.map",
-    "static/js/3.5e6d945d.chunk.js": "/static/js/3.5e6d945d.chunk.js",
-    "static/js/3.5e6d945d.chunk.js.map": "/static/js/3.5e6d945d.chunk.js.map",
-    "index.html": "/index.html",
-    "static/js/2.11856e59.chunk.js.LICENSE.txt": "/static/js/2.11856e59.chunk.js.LICENSE.txt"
+    "main.js": "/NymphFeetFrontend/static/js/main.bf436761.chunk.js",
+    "main.js.map": "/NymphFeetFrontend/static/js/main.bf436761.chunk.js.map",
+    "runtime-main.js": "/NymphFeetFrontend/static/js/runtime-main.71caf595.js",
+    "runtime-main.js.map": "/NymphFeetFrontend/static/js/runtime-main.71caf595.js.map",
+    "static/js/2.8183b181.chunk.js": "/NymphFeetFrontend/static/js/2.8183b181.chunk.js",
+    "static/js/2.8183b181.chunk.js.map": "/NymphFeetFrontend/static/js/2.8183b181.chunk.js.map",
+    "static/js/3.364dd74a.chunk.js": "/NymphFeetFrontend/static/js/3.364dd74a.chunk.js",
+    "static/js/3.364dd74a.chunk.js.map": "/NymphFeetFrontend/static/js/3.364dd74a.chunk.js.map",
+    "index.html": "/NymphFeetFrontend/index.html",
+    "static/js/2.8183b181.chunk.js.LICENSE.txt": "/NymphFeetFrontend/static/js/2.8183b181.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c740c87d.js",
-    "static/js/2.11856e59.chunk.js",
-    "static/js/main.a5401671.chunk.js"
+    "static/js/runtime-main.71caf595.js",
+    "static/js/2.8183b181.chunk.js",
+    "static/js/main.bf436761.chunk.js"
   ]
 }

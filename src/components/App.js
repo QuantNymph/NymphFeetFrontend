@@ -6,7 +6,7 @@ import Owned from './Owned';
 import Analytics from './Analytics';
 // import Cases from './Cases';
 
-const CONTRACT_ADDRESS = '0x8BF9d84E5f2D427B84D7d8bfd4E1B656570c0CaF';
+const CONTRACT_ADDRESS = '0x502f880a30599709fCfB81C788F548d32b7596d0';
 const CORRECT_CHAIN_ID = 1; // 1337 (local) or 42161 (arbi) or 421611 (arbi test)
 const CORRECT_CHAIN_HEX = '0x1'; // 0x539 (local) or 0xA4B1 (arbi) or 0x66EEB (arbi-test)
 

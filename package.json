@@ -1,15 +1,15 @@
 {
   "name": "frontend",
+  "homepage": "http://quantnymph.github.io/NymphFeetFrontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "ethers": "^5.0.0-beta.101",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "ansi-html": "^0.0.7",
     "ansi-regex": "^6.0.1",
-    "gh-pages": "^3.2.3",
+    "ethers": "^5.0.0-beta.101",
     "immer": "^9.0.7",
     "netlify": "^10.0.0",
     "netlify-cli": "^8.0.19",
@@ -20,12 +20,14 @@
     "serve": "^13.0.2",
     "web-vitals": "^1.1.2"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+  "scripts": { 
+    "start": "react-scripts --openssl-legacy-provider start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
+   },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -43,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
