@@ -64,7 +64,7 @@ function Owned({connection}) {
       {!isLoading && <div id="gallery">
         {ownedBots.map(b => (
           <div className="arbibot" key={b.tokenId}>            
-            <img src={"https://ipfs.io" + b.image} key={"https://ipfs.io" + b.image}></img>
+            <img src={"https://ipfs.io".concat(b.image)} key={"https://ipfs.io".concat(b.image)}></img>
             <p>Feet Pic #{b.tokenId}</p>
           </div>
         ))}
