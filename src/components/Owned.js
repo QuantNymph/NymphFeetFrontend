@@ -60,12 +60,12 @@ function Owned({connection}) {
 
       <br />
 
-      {isLoading && <p>Loading owned bots... <br /> (rendering might take a while depending on your RPC)</p>}
+      {isLoading && <p>Loading owned feet pics... <br /> (rendering might take a while depending on your RPC)</p>}
       {!isLoading && <div id="gallery">
         {ownedBots.map(b => (
-          <div className="arbibot" key={b.tokenId}>
-            <img src={b.image} key={b.image}></img>
-            <p>Bot #{b.tokenId}</p>
+          <div className="arbibot" key={b.tokenId}>            
+            <img src={"http://ipfs.io/ipfs" + b.image} key={"http://ipfs.io/ipfs" + b.image}></img>
+            <p>Feet Pic #{b.tokenId}</p>
           </div>
         ))}
       </div>}
