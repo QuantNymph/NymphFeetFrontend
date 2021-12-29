@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/NymphFeetFrontend/static/js/main.97cdf515.chunk.js",
-    "main.js.map": "/NymphFeetFrontend/static/js/main.97cdf515.chunk.js.map",
+    "main.js": "/NymphFeetFrontend/static/js/main.13fad529.chunk.js",
+    "main.js.map": "/NymphFeetFrontend/static/js/main.13fad529.chunk.js.map",
     "runtime-main.js": "/NymphFeetFrontend/static/js/runtime-main.71caf595.js",
     "runtime-main.js.map": "/NymphFeetFrontend/static/js/runtime-main.71caf595.js.map",
     "static/js/2.8183b181.chunk.js": "/NymphFeetFrontend/static/js/2.8183b181.chunk.js",
@@ -14,6 +14,6 @@
   "entrypoints": [
     "static/js/runtime-main.71caf595.js",
     "static/js/2.8183b181.chunk.js",
-    "static/js/main.97cdf515.chunk.js"
+    "static/js/main.13fad529.chunk.js"
   ]
 }
