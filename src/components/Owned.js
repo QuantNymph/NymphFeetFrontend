@@ -65,7 +65,7 @@ function Owned({connection}) {
       {ownedBots.length > 0 && !isLoading  && <div id="invite"><a href='https://discord.gg/AG5zAhBUCT'>Come to the discord!</a> (verify with collab.land for access)</div> && <div id="gallery">        
         {ownedBots.map(b => (
           <div className="arbibot" key={b.tokenId}>            
-            <img src={"https://ipfs.io".concat(b.image)} key={"https://ipfs.io".concat(b.image)}></img>
+            <img width={256} height={'auto'} src={"https://ipfs.io".concat(b.image)} key={"https://ipfs.io".concat(b.image)}></img>
             <p>Feet Pic #{b.tokenId}</p>
           </div>
         ))}
