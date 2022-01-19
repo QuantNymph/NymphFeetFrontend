@@ -24,10 +24,7 @@ function App() {
 
   const [connection, setConnection] = useState(null);
   const [state, setState] = useState({
-    mintPrice: '...',
     totalSupply: '...',
-    supplyLimit: '...',    
-    nextPoolUnlockLimit: '...',
     mintable: true,
   });
 
@@ -77,19 +74,15 @@ function App() {
   }, []);
 
   async function fetchData({contract, provider}) {
-    const [mintPrice, totalSupply, supplyLimit, contractBalance, totalPools] = await Promise.all([
-      contract.mintPrice(), contract.totalSupply(), contract.MAX_FEET(), provider.getBalance(contract.address), contract.TOTAL_REWARD_POOLS()
+    const [totalSupply] = await Promise.all([
+      contract.totalSupply()
     ]);
 
-    const rewardPoolSlot = totalSupply.div(supplyLimit.div(totalPools));
 
     setState({
       ...state,
-      mintPrice: utils.formatEther(mintPrice),
-      totalSupply: totalSupply.toNumber(),
-      supplyLimit: supplyLimit.toNumber(),      
-      nextPoolUnlockLimit: rewardPoolSlot.add(1).mul(supplyLimit.div(totalPools)).toNumber(),
-      mintable: totalSupply.toNumber() !== supplyLimit.toNumber()
+      totalSupply: totalSupply.toNumber(),        
+      mintable: false
     });
   }
 
